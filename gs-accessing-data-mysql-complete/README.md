@@ -28,6 +28,7 @@ The UI is very poor, but is works, you can add users entering in the name and la
 * http://www.baeldung.com/angularjs-crud-with-spring-data-rest
 * http://www.baeldung.com/spring-data-rest-intro 
 
+- The source of this README.md: https://github.com/eugenp/tutorials/tree/master/spring-data-rest
 - [Guide to Spring Data REST Validators](http://www.baeldung.com/spring-data-rest-validators)
 - [Working with Relationships in Spring Data REST](http://www.baeldung.com/spring-data-rest-relationships)
 - [AngularJS CRUD Application with Spring Data REST](http://www.baeldung.com/angularjs-crud-with-spring-data-rest)
