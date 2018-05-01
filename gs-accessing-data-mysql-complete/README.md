@@ -25,6 +25,8 @@ The UI is very poor, but is works, you can add users entering in the name and la
 * http://localhost:8080/users
 * http://localhost:8080/demo/add?name=First&email=someemail@someemailprovider.com
 
+* http://localhost:4200/ 
+
 # TODO:
 
 * Using in memory db (h2): DONE
