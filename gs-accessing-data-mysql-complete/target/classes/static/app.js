@@ -1,9 +1,5 @@
 var app = angular.module('app', []);
 
-//app.controller('Ctrl', ['$scope',function($scope) {
-//  $scope.age = 24;
-//}]);
-
 app.service('UserCRUDService', [ '$http', function($http) {
  
     this.getUser = function getUser(userId) {

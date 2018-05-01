@@ -27,7 +27,7 @@ public class MainController {
 		n.setName(name);
 		n.setEmail(email);
 		userRepository.save(n);
-		return "Saved";
+		return "Saved name: " + n.getName() + " email: " + n.getEmail();
 	}
 	
 	@GetMapping(path="/all")

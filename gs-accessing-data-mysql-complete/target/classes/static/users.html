@@ -12,7 +12,8 @@
 	</head>
 
 	<body>
-	    <p>V: 2</p>
+	
+	    <p>V: 4</p>
 		<div ng-controller="UserCRUDCtrl">
 		
 			<table>
@@ -30,13 +31,16 @@
 			    </tr>
 			</table>
 			
-			<a ng-click="getUser(user.id)">Get User</a>
-			<a ng-click="updateUser(user.id,user.name,user.email)">Update User</a>
-			<a ng-click="addUser(user.name,user.email)">Add User</a>
-			<a ng-click="deleteUser(user.id)">Delete User</a>
-			<a ng-click="getAllUsers()">Get all Users</a><br/><br/>
+			<button ng-click="getUser(user.id)">Get User</button>
+			<button ng-click="updateUser(user.id,user.name,user.email)">Update User</button>
+			<button ng-click="addUser(user.name,user.email)">Add User</button>
+			<button ng-click="deleteUser(user.id)">Delete User</button>
+			<button ng-click="getAllUsers()">Get all Users</button>
+			
+			<br/><br/>
+			
 			<div ng-repeat="usr in users">
-			{{usr.name}} {{usr.email}}
+			{{usr.id}} {{usr.name}} {{usr.email}}
 		
 		</div>
 	</body>

@@ -14,19 +14,27 @@ The application uses [Spring Boot](http://projects.spring.io/spring-boot/), so i
 # Viewing the running application
 To view the running application, visit [http://localhost:8080](http://localhost:8080) in your browser
 
-# Usin UI
+# Using UI
 
 The UI is very poor, but is works, you can add users entering in the name and lastname field and then click in the add button, then with a few users added you can do the rest of the cruds operations (good luck ;) )
 
+* http://localhost:4200/
+
+# Using REST API
+
+* http://localhost:8080/users
+* http://localhost:8080/demo/add?name=First&email=someemail@someemailprovider.com
+
 # TODO:
 
-* Using in memory db (h2): WIP
+* Using in memory db (h2): DONE
 * Make a better ui (https://github.com/akveo/ngx-admin): WIP
 
 ###Relevant Articles:
 * https://spring.io/guides/gs/accessing-data-mysql/ 
 * http://www.baeldung.com/angularjs-crud-with-spring-data-rest
 * http://www.baeldung.com/spring-data-rest-intro 
+* https://dzone.com/articles/integrate-h2-database-in-your-spring-boot-applicat
 
 - The source of this README.md: https://github.com/eugenp/tutorials/tree/master/spring-data-rest
 - [Guide to Spring Data REST Validators](http://www.baeldung.com/spring-data-rest-validators)
