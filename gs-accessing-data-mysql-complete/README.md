@@ -30,7 +30,7 @@ The UI is very poor, but is works, you can add users entering in the name and la
 # TODO:
 
 * Using in memory db (h2): DONE
-* Make a better ui (https://github.com/akveo/ngx-admin): WIP
+* Make a better ui (https://github.com/akveo/ngx-admin): DONE
 
 ###Relevant Articles:
 * https://spring.io/guides/gs/accessing-data-mysql/ 
