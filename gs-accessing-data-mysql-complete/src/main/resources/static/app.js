@@ -1,4 +1,4 @@
-var app = angular.module('app', []);
+var app = angular.module('app', ['ngMaterial', 'ngMessages']);
 
 app.service('UserCRUDService', [ '$http', function($http) {
  

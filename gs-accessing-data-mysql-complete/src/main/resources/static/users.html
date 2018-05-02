@@ -1,20 +1,32 @@
 <!doctype html>
-<html ng-app="app">
+<html>
 	<head>
 		<title>CRUD REST AngularJS</title>
+    <!-- AngularJS Material CSS now available via Google CDN; version 1.1.9 used here -->
+	    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.9/angular-material.min.css">
+	    
+	    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
 		
-<!-- 
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular-route.min.js"></script>
--->
+	    <!-- AngularJS Material Dependencies -->
+	    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
+	    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular-animate.min.js"></script>
+	    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular-aria.min.js"></script>
+	    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular-messages.min.js"></script>
+	
+	    <!-- AngularJS Material Javascript now available via Google CDN; version 1.1.4 used here -->
+	    <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.9/angular-material.min.js"></script>
 
+<!-- 
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+ -->
     	<script src="app.js"></script>
 	</head>
 
-	<body>
+	<body ng-app="app" ng-cloak>
 	
 		<div ng-controller="UserCRUDCtrl">
-	
+		
 		    <p>V: 4</p>
 			<table>
 			    <tr>
@@ -31,11 +43,25 @@
 			    </tr>
 			</table>
 			
-			<button ng-click="getUser(user.id)">Get User</button>
-			<button ng-click="updateUser(user.id,user.name,user.email)">Update User</button>
-			<button ng-click="addUser(user.name,user.email)">Add User</button>
-			<button ng-click="deleteUser(user.id)">Delete User</button>
-			<button ng-click="getAllUsers()">Get all Users</button>
+			<!-- 
+			<button mat-button class="mat-button">normal</button>
+		    <button mat-raised-button>raised</button>
+		    <button mat-stroked-button>stroked</button>
+		    <button mat-flat-button>flat</button>
+		    <button mat-fab><mat-icon>check</mat-icon></button>
+		    <button mat-mini-fab><mat-icon>check</mat-icon></button>
+			
+			<br>
+			<br>
+
+			<md-button class="md-raised">Button</md-button>
+			 -->
+			
+			<md-button class="md-raised" mat-button ng-click="getUser(user.id)">Get User</md-button>
+			<md-button class="md-raised" ng-click="updateUser(user.id,user.name,user.email)">Update User</md-button>
+			<md-button class="md-raised" ng-click="addUser(user.name,user.email)">Add User</md-button>
+			<md-button class="md-raised" ng-click="deleteUser(user.id)">Delete User</md-button>
+			<md-button class="md-raised" ng-click="getAllUsers()">Get all Users</md-button>
 			
 			<br/><br/>
 			
