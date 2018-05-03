@@ -2,7 +2,8 @@
 <html>
 	<head>
 		<title>CRUD REST AngularJS</title>
-    <!-- AngularJS Material CSS now available via Google CDN; version 1.1.9 used here -->
+	
+	    <!-- AngularJS Material CSS now available via Google CDN; version 1.1.9 used here -->
 	    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.9/angular-material.min.css">
 	    
 	    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -17,17 +18,11 @@
 	    <!-- AngularJS Material Javascript now available via Google CDN; version 1.1.4 used here -->
 	    <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.9/angular-material.min.js"></script>
 
-<!-- 
-		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
- -->
     	<script src="app.js"></script>
 	</head>
 
 	<body ng-app="app" ng-cloak>
 	
-		<div class="md-padding" ng-controller="UserCRUDCtrl">
-		</div>
-		
 		<div ng-controller="UserCRUDCtrl" ng-cloak>
 		  <md-toolbar class="md-menu-toolbar">
 
@@ -84,22 +79,44 @@
 		  			
 		          </div>
 		 	 
-		  		<div ng-repeat="usr in users">
-		  		{{usr.id}} {{usr.name}} {{usr.email}}
+		  		  <div ng-repeat="usr in users">
+		  		  	{{usr.id}} {{usr.name}} {{usr.email}}
 		          </div>
+		          
+		          <mat-table #table [dataSource]="users">
+		          </mat-table>
+		          
 		        </div>
 		      </md-content>
-		        
 
-		      <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam quis risus eget urna mollis ornare vel eu
-		        leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras mattis
-		        consectetur purus sit amet fermentum. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh
-		        ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+			  <table class="table table-striped">
+			    <thead>
+			    <tr>
+			      <th class="hidden">Id</th>
+			      <th>FirstName</th>
+			      <th>LastName</th>
+			      <th>Email</th>
+			      <th>Action</th>
+			    </tr>
+			    </thead>
+			    <tbody>
+			    <tr *ngFor="let user of users">
+			      <td class="hidden"></td>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			      <td><button class="btn btn-danger" (click)="deleteUser(user)"> Delete User</button></td>
+			    </tr>
+			    </tbody>
+			  </table>
+
+		      
 		      <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vestibulum id ligula porta felis euismod semper.
 		        Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Praesent commodo cursus magna, vel
 		        scelerisque nisl consectetur et. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia
 		        odio sem nec elit. Nulla vitae elit libero, a pharetra augue. Aenean eu leo quam. Pellentesque ornare sem
 		        lacinia quam venenatis vestibulum.</p>
+		      
 		      <p>Etiam porta sem malesuada magna mollis euismod. Maecenas faucibus mollis interdum. Maecenas sed diam eget risus
 		        varius blandit sit amet non magna. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
 		    </md-card>

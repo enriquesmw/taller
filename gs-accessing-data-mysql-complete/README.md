@@ -30,7 +30,12 @@ The UI is very poor, but is works, you can add users entering in the name and la
 # TODO:
 
 * Using in memory db (h2): DONE
-* Make a better ui (https://github.com/akveo/ngx-admin): DONE
+* Make a better ui (Material Design): DONE
+
+* http://www.devglan.com/spring-boot/spring-boot-angular-example
+* https://blog.angular-university.io/angular-material-data-table/
+* https://stackoverflow.com/questions/45004524/how-to-use-material2-data-table
+* https://medium.com/codingthesmartway-com-blog/angular-material-part-4-data-table-23874582f23a
 
 ###Relevant Articles:
 * https://spring.io/guides/gs/accessing-data-mysql/ 
